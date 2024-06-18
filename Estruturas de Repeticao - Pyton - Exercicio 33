@@ -1,0 +1,15 @@
+# 33 - Dados n de dois números inteiros positivos, i e j, diferentes de 0, imprima em ordem crescente
+# os n primeiros números naturais que são multiplos de i ou de  j e ou de ambos.
+# exemplo: Para n = 6, i = 2 e j = 3 a saída deverá ser: 0,2,3,4,6,8.
+
+n = 6
+i = 2
+j = 3
+contador = 0
+numero = 0
+
+while contador < n:
+    if numero % i == 0 or numero % j == 0:
+        contador = contador + 1
+        print(numero, end=", ")
+    numero = numero + 1
